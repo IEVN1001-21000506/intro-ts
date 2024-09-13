@@ -7,7 +7,7 @@ class Persona{
         this.edad = edad1;
     }
     imprimir():void{
-        console.log(`Hola, mi nombre es${this.nombre} y tengo ${this.edad}`);
+        console.log(`Hola, mi nombree es${this.nombre} y tengo ${this.edad}`);
     }
 }
 let persona1 = new Persona('Juan', 30);
