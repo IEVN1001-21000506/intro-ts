@@ -4,7 +4,10 @@ import './style.css'
 //import './temas-ts/03-funciones.ts'
 //import './temas-ts/04-desestructura-obj-arre.ts'
 //import './temas-ts/05-desestructurar-funciones.ts'
-import './temas-ts/06-exportar-importar.ts'
+//import './temas-ts/06-exportar-importar.ts'
+//import './temas-ts/areas.ts'
+import './temas-ts/volumen.ts'
+
 
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
