@@ -1,26 +1,30 @@
-export class Area{
-    lado:number;
-    base:number;
-    altura:number;
-    radio:number;
-    ar:number;
+export class Areas {
+    private base: number;
+    private alt: number;
+    private rad: number;
+    private lad: number;
 
-
-    constructor(lado1: number, base1: number, altura1: number, radio1: number, ar1:number){
-        this.lado = lado1;
-        this.base = base1;
-        this.altura = altura1;
-        this.radio = radio1;
-        this.ar = ar1;
+    constructor(base: number, alt: number, rad: number, lad: number) {
+        this.base = base;
+        this.alt = alt;
+        this.rad = rad;
+        this.lad = lad;
     }
 
-    areaCuadrado(){
-        this.ar=(this.lado*this.lado)
+    rect(): number {
+        return this.base * this.alt;
     }
-    areaRectangulo(){
-        this.ar=(this.base*this.altura)
+
+    circ(): number {
+        return Math.PI * Math.pow(this.rad, 2);
     }
-    areaCirculo(){
-        this.ar=(3.1416*Math.pow(this.radio, 2))
+
+    cuad(): number {
+        return Math.pow(this.lad, 2);
     }
 }
+
+const areas = new Areas(5, 10, 8, 6);
+console.log(`Área del Rectángulo: ${areas.rect()}`);
+console.log(`Área del Círculo: ${areas.circ()}`);
+console.log(`Área del Cuadrado: ${areas.cuad()}`);
